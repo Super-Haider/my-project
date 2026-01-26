@@ -135,10 +135,55 @@ int main(void)
   // r=(a*a)+(2*a*b)+(b*b);
 
   //TASK 3
-    char msg[]="Microcontrollers";
-    int key=10270;
-    char enc[100]; //encrypted
-    char dec[100]; //decrypted
+    // char msg[]="Microcontrollers";
+    // int key=10270;
+    // char enc[100]; //encrypted
+    // char dec[100]; //decrypted
+
+  //Task 4
+  // int A[2][2]={{1,2},{3,4}};
+  // int B[2][2]={{5,6},{7,8}};
+  // int C[2][2]={{0,0},{0,0}};
+
+  // myPrintf("Matrix A: \r\n");
+  // for(int i=0; i<2; i++){
+  //   myPrintf("%d\t%d\r\n",A[i][0], A[i][1]);
+  // }
+  // myPrintf("\r\n");
+
+  // myPrintf("Matrix B: \r\n");
+  // for(int i=0; i<2; i++){
+  //   myPrintf("%d\t%d\r\n",B[i][0], B[i][1]);
+  // }
+  // myPrintf("\r\n");
+
+  // for(int i=0; i<2;i++){
+  //   for(int j=0;j<2;j++){
+  //     for(int k=0; k<2;k++){
+  //       C[i][j]+=A[i][k]*B[k][j];
+  //     }
+  //   }
+  // }
+
+  // myPrintf("Matrix C: \r\n");
+  // for(int i=0; i<2; i++){
+  //   myPrintf("%d\t%d\r\n",C[i][0], C[i][1]);
+  // }
+  // myPrintf("\r\n");
+
+  //Task 5
+  // for(int n=100;n<=999;n++){
+  //   int d1=n/100;
+  //   int d2=(n/10)%10;
+  //   int d3=n%10;
+
+  //   int s=(d1*d1*d1)+(d2*d2*d2)+(d3*d3*d3);
+
+  //   if(s==n){
+  //     myPrintf("%d\r\n",n);
+  //   }
+  // }
+  // myPrintf("\n Armstrong number search complete.\r\n");
 
   while (1)
   {
@@ -170,24 +215,25 @@ int main(void)
     // HAL_Delay(1000);
 
     //TASK 3
-    for(int i=0;i<strlen(msg);i++){
-      enc[i]=msg[i]+(key%256);
-    }
-    enc[strlen(msg)]='\0';
+    // for(int i=0;i<strlen(msg);i++){
+    //   enc[i]=msg[i]+(key%256);
+    // }
+    // enc[strlen(msg)]='\0';
 
-    myPrintf("Encrypted String: %s\r\n",enc);
-    for(int i=0;i<strlen(msg);i++){
-      dec[i]=enc[i]-(key%256);
-    }
-    dec[strlen(msg)]='\0';
-    myPrintf("Decrypted String: %s\r\n",dec);
-    if(strcmp(msg,dec)==0){
-      myPrintf("Encryption and Decryption were successful!\r\n");
-    }
-    else{
-      myPrintf("Task Failed!");
-    }
-    HAL_Delay(1000);
+    // myPrintf("Encrypted String: %s\r\n",enc);
+    // for(int i=0;i<strlen(msg);i++){
+    //   dec[i]=enc[i]-(key%256);
+    // }
+    // dec[strlen(msg)]='\0';
+    // myPrintf("Decrypted String: %s\r\n",dec);
+    // if(strcmp(msg,dec)==0){
+    //   myPrintf("Encryption and Decryption were successful!\r\n");
+    // }
+    // else{
+    //   myPrintf("Task Failed!");
+    // }
+    // HAL_Delay(1000);
+    
   }
 
 
