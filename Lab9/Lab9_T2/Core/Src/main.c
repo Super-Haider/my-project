@@ -16,6 +16,7 @@
   ******************************************************************************
   */
 /* USER CODE END Header */
+
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 
@@ -33,12 +34,6 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-
-// ── TASK 1: WHO AM I ─────────────────────────────────────────────────────────
-//#define LSM303AGR_ACCEL_ADDR     0x33
-//#define LSM303AGR_WHO_AM_I_REG   0x0F
-//#define LSM303AGR_WHO_AM_I_VAL   0x33
-// ─────────────────────────────────────────────────────────────────────────────
 
 // ── TASK 2: ACCELEROMETER ────────────────────────────────────────────────────
 #define LSM303AGR_ACCEL_ADDR_READ   0x33
@@ -176,6 +171,7 @@ void Offset_LSM(LSM_Data *data)
     // Z: subtract 1g since gravity acts on Z when board is flat
     data->acc_offset_z = (sum_z / CALIB_SAMPLES) - 1.0f;
 }
+
 void Print_LSM(LSM_Data *data)
 {
     char msg[100];
@@ -238,39 +234,6 @@ int main(void)
 
   HAL_Delay(100);
 
-  // ── TASK 1: Read WHO AM I register ───────────────────────────────────────
-  /*
-  uint8_t who_am_i = 0;
-  char msg[64];
-
-  HAL_StatusTypeDef status = HAL_I2C_Mem_Read(
-      &hi2c1,
-      LSM303AGR_ACCEL_ADDR,
-      LSM303AGR_WHO_AM_I_REG,
-      I2C_MEMADD_SIZE_8BIT,
-      &who_am_i,
-      1,
-      HAL_MAX_DELAY
-  );
-
-  if (status == HAL_OK)
-  {
-      snprintf(msg, sizeof(msg), "WHO_AM_I = 0x%02X\r\n", who_am_i);
-      HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
-
-      if (who_am_i == LSM303AGR_WHO_AM_I_VAL)
-          snprintf(msg, sizeof(msg), "SUCCESS: LSM303AGR detected!\r\n");
-      else
-          snprintf(msg, sizeof(msg), "WARNING: Unexpected WHO_AM_I value!\r\n");
-  }
-  else
-  {
-      snprintf(msg, sizeof(msg), "ERROR: I2C communication failed! Status = %d\r\n", status);
-  }
-  HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
-  */
-  // ─────────────────────────────────────────────────────────────────────────
-
   // ── TASK 2: Initialize and calibrate accelerometer ───────────────────────
   LSM_Data lsm = {0};
 
@@ -296,50 +259,17 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 
-    // ── TASK 1: Print WHO AM I in loop ─────────────────────────────────────
-    /*
-    uint8_t who_am_i = 0;
-    char msg[64];
-
-    HAL_StatusTypeDef status = HAL_I2C_Mem_Read(
-        &hi2c1,
-        LSM303AGR_ACCEL_ADDR,
-        LSM303AGR_WHO_AM_I_REG,
-        I2C_MEMADD_SIZE_8BIT,
-        &who_am_i,
-        1,
-        HAL_MAX_DELAY
-    );
-
-    if (status == HAL_OK)
-    {
-        snprintf(msg, sizeof(msg), "WHO_AM_I = 0x%02X\r\n", who_am_i);
-        HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
-
-        if (who_am_i == LSM303AGR_WHO_AM_I_VAL)
-            snprintf(msg, sizeof(msg), "SUCCESS: LSM303AGR detected!\r\n");
-        else
-            snprintf(msg, sizeof(msg), "WARNING: Unexpected WHO_AM_I value!\r\n");
-    }
-    else
-    {
-        snprintf(msg, sizeof(msg), "ERROR: I2C failed! Status = %d\r\n", status);
-    }
-    HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
-    HAL_Delay(1000);
-    */
-    // ───────────────────────────────────────────────────────────────────────
-
     // ── TASK 2: Read and print accelerometer data ──────────────────────────
-// In while(1), only calibrate when user button is pressed
-if (HAL_GPIO_ReadPin(B1_GPIO_Port, B1_Pin) == GPIO_PIN_SET)
-{
-    char cal_msg[] = "Calibrating...\r\n";
-    HAL_UART_Transmit(&huart2, (uint8_t*)cal_msg, strlen(cal_msg), HAL_MAX_DELAY);
-    Offset_LSM(&lsm);
-    char done_msg[] = "Done!\r\n";
-    HAL_UART_Transmit(&huart2, (uint8_t*)done_msg, strlen(done_msg), HAL_MAX_DELAY);
-}
+    // Calibrate when user button is pressed
+    if (HAL_GPIO_ReadPin(B1_GPIO_Port, B1_Pin) == GPIO_PIN_SET)
+    {
+        char cal_msg2[] = "Calibrating...\r\n";
+        HAL_UART_Transmit(&huart2, (uint8_t*)cal_msg2, strlen(cal_msg2), HAL_MAX_DELAY);
+        Offset_LSM(&lsm);
+        char done_msg2[] = "Done!\r\n";
+        HAL_UART_Transmit(&huart2, (uint8_t*)done_msg2, strlen(done_msg2), HAL_MAX_DELAY);
+    }
+    
     Read_LSM(&lsm);
     Print_LSM(&lsm);
     HAL_Delay(100);
