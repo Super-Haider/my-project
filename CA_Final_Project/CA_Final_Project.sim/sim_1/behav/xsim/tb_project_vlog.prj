@@ -1,0 +1,24 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../CA_Final_Project.srcs/sources_1/new/ALU_64_bit.v" \
+"C:/Users/DELL/Desktop/CA Labs/Design Sources/ALU_control.v" \
+"C:/Users/DELL/Desktop/CA Labs/Design Sources/Branch_unit.v" \
+"../../../../CA_Final_Project.srcs/sources_1/new/Branchadder.v" \
+"C:/Users/DELL/Desktop/CA Labs/Design Sources/Data_Memory.v" \
+"../../../../CA_Final_Project.srcs/sources_1/new/Immgen.v" \
+"C:/Users/DELL/Desktop/CA Labs/Design Sources/Instruction_Memory.v" \
+"../../../../CA_Final_Project.srcs/sources_1/new/Mux2.v" \
+"../../../../CA_Final_Project.srcs/sources_1/new/Pcadder.v" \
+"../../../../CA_Final_Project.srcs/sources_1/new/Programcounter.v" \
+"../../../../CA_Final_Project.srcs/sources_1/new/Toplevelprocessor.v" \
+"C:/Users/DELL/Desktop/CA Labs/Design Sources/control_unit.v" \
+"C:/Users/DELL/Desktop/CA Labs/Design Sources/instruction_parser.v" \
+"C:/Users/DELL/Desktop/CA Labs/Design Sources/mux.v" \
+"C:/Users/DELL/Desktop/CA Labs/Design Sources/registerFile.v" \
+"../../../../CA_Final_Project.srcs/sim_1/new/tb_project.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

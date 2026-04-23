@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../CA_Final_Project.srcs/sources_1/new/Branchadder.v" \
+"../../../../CA_Final_Project.srcs/sources_1/new/Immgen.v" \
+"../../../../CA_Final_Project.srcs/sources_1/new/Mux2.v" \
+"../../../../CA_Final_Project.srcs/sources_1/new/Pcadder.v" \
+"../../../../CA_Final_Project.srcs/sources_1/new/Programcounter.v" \
+"../../../../CA_Final_Project.srcs/sim_1/new/tb_Task1.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

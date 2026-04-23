@@ -1,0 +1,1161 @@
+
+*** Running vivado
+    with args -log FPGA_Top.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source FPGA_Top.tcl -notrace
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source FPGA_Top.tcl -notrace
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1016.625 ; gain = 0.000
+Command: link_design -top FPGA_Top -part xc7a35tcpg236-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.215 . Memory (MB): peak = 1016.625 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3337 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/DELL/Downloads/constraints_t3.xdc]
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__0_i_1' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__0_i_2' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__0_i_3' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__0_i_4' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__0_i_5' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__10_i_1' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__10_i_2' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__10_i_3' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__10_i_4' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__11_i_1' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__11_i_2' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__11_i_3' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__11_i_4' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__12_i_1' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__12_i_2' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__12_i_3' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__12_i_4' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__13_i_1' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__13_i_2' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__13_i_3' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__13_i_4' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__14_i_1' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__14_i_2' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__14_i_3' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__14_i_4' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__1_i_1' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__1_i_2' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__1_i_3' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__1_i_4' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__2_i_1' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__2_i_2' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__2_i_3' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__2_i_4' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__2_i_5' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__2_i_6' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__3_i_1' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__3_i_2' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__3_i_3' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__3_i_4' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__4_i_1' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__4_i_2' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__4_i_3' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__4_i_4' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__5_i_1' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__5_i_2' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__5_i_3' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__5_i_4' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__6_i_1' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__6_i_2' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__6_i_3' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__6_i_4' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__7_i_1' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__7_i_2' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__7_i_3' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__7_i_4' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__8_i_1' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__8_i_2' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__8_i_3' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__8_i_4' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__9_i_1' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__9_i_2' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__9_i_3' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry__9_i_4' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry_i_1' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry_i_2' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/BranchTarget_carry_i_3' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/DataMemory[0][0]_i_1' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/DataMemory[0][0]_i_2' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/DataMemory[0][0]_i_3' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/DataMemory[0][1]_i_1' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/DataMemory[0][1]_i_2' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/DataMemory[0][1]_i_3' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/DataMemory[0][2]_i_1' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/DataMemory[0][2]_i_2' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/DataMemory[0][2]_i_3' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/DataMemory[0][3]_i_1' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/DataMemory[0][3]_i_2' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/DataMemory[0][3]_i_3' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/DataMemory[0][4]_i_1' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/DataMemory[0][4]_i_2' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/DataMemory[0][4]_i_3' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/DataMemory[0][5]_i_1' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/DataMemory[0][5]_i_2' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/DataMemory[0][5]_i_3' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/DataMemory[0][6]_i_1' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/DataMemory[0][6]_i_2' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/DataMemory[0][6]_i_3' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/DataMemory[0][7]_i_1' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/DataMemory[0][7]_i_10' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/DataMemory[0][7]_i_11' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/DataMemory[0][7]_i_12' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/DataMemory[0][7]_i_13' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/DataMemory[0][7]_i_14' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/DataMemory[0][7]_i_15' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/DataMemory[0][7]_i_16' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/DataMemory[0][7]_i_17' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/DataMemory[0][7]_i_18' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/DataMemory[0][7]_i_19' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG/DataMemory[0][7]_i_2' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+INFO: [Common 17-14] Message 'Constraints 18-401' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Finished Parsing XDC File [C:/Users/DELL/Downloads/constraints_t3.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1016.625 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 22 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 22 instances
+
+8 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1016.625 ; gain = 0.000
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1016.625 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1e5f0af3c
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1346.836 ; gain = 330.211
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 189ccfa98
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1551.109 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 1 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 1e092800e
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1551.109 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 1e4f496f2
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1551.109 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Sweep, 8 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 1e4f496f2
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1551.109 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 1e4f496f2
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1551.109 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 1e4f496f2
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1551.109 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               1  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              8  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1551.109 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 15f75b6d7
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1551.109 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 15f75b6d7
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.140 . Memory (MB): peak = 1551.109 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 15f75b6d7
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1551.109 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1551.109 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 15f75b6d7
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1551.109 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+26 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1551.109 ; gain = 534.484
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.312 . Memory (MB): peak = 1551.109 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/CA_Final_Project/CA_Final_Project.runs/impl_1/FPGA_Top_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1551.109 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file FPGA_Top_drc_opted.rpt -pb FPGA_Top_drc_opted.pb -rpx FPGA_Top_drc_opted.rpx
+Command: report_drc -file FPGA_Top_drc_opted.rpt -pb FPGA_Top_drc_opted.pb -rpx FPGA_Top_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2020.1/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file D:/CA_Final_Project/CA_Final_Project.runs/impl_1/FPGA_Top_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1551.109 ; gain = 0.000
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1551.109 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 135b086eb
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.170 . Memory (MB): peak = 1551.109 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1551.109 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: d5d48296
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1551.109 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: ea36e8c8
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1583.012 ; gain = 31.902
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: ea36e8c8
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1583.012 ; gain = 31.902
+Phase 1 Placer Initialization | Checksum: ea36e8c8
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 1583.012 ; gain = 31.902
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 12679e042
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1583.012 ; gain = 31.902
+
+Phase 2.2 Global Placement Core
+
+Phase 2.2.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 346 LUTNM shape to break, 8 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 9, two critical 337, total 346, new lutff created 0
+INFO: [Physopt 32-775] End 1 Pass. Optimized 348 nets or cells. Created 346 new cells, deleted 2 existing cells and moved 0 existing cell
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for HD net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1583.012 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |          346  |              2  |                   348  |           0  |           1  |  00:00:01  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |          346  |              2  |                   348  |           0  |           8  |  00:00:01  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2.1 Physical Synthesis In Placer | Checksum: 12f31d60f
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:29 . Memory (MB): peak = 1583.012 ; gain = 31.902
+Phase 2.2 Global Placement Core | Checksum: 214347224
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:30 . Memory (MB): peak = 1583.012 ; gain = 31.902
+Phase 2 Global Placement | Checksum: 214347224
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:30 . Memory (MB): peak = 1583.012 ; gain = 31.902
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 157c7c6b5
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:32 . Memory (MB): peak = 1583.012 ; gain = 31.902
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 23e95fae0
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:34 . Memory (MB): peak = 1583.012 ; gain = 31.902
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 29aef36a4
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:35 . Memory (MB): peak = 1583.012 ; gain = 31.902
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 1da70cf54
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:35 . Memory (MB): peak = 1583.012 ; gain = 31.902
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 272444d35
+
+Time (s): cpu = 00:01:09 ; elapsed = 00:00:56 . Memory (MB): peak = 1583.012 ; gain = 31.902
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 179b3189f
+
+Time (s): cpu = 00:01:22 ; elapsed = 00:01:14 . Memory (MB): peak = 1583.012 ; gain = 31.902
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 183643055
+
+Time (s): cpu = 00:01:24 ; elapsed = 00:01:17 . Memory (MB): peak = 1583.012 ; gain = 31.902
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 23159bfc6
+
+Time (s): cpu = 00:01:24 ; elapsed = 00:01:17 . Memory (MB): peak = 1583.012 ; gain = 31.902
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 1f535c31d
+
+Time (s): cpu = 00:01:46 ; elapsed = 00:01:39 . Memory (MB): peak = 1583.012 ; gain = 31.902
+Phase 3 Detail Placement | Checksum: 1f535c31d
+
+Time (s): cpu = 00:01:46 ; elapsed = 00:01:40 . Memory (MB): peak = 1583.012 ; gain = 31.902
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1304dc2ab
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-8.384 | TNS=-55184.046 |
+Phase 1 Physical Synthesis Initialization | Checksum: cb12207e
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.940 . Memory (MB): peak = 1630.965 ; gain = 0.000
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: 154bf4d30
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1630.965 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1304dc2ab
+
+Time (s): cpu = 00:01:56 ; elapsed = 00:01:47 . Memory (MB): peak = 1630.965 ; gain = 79.855
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-6.743. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 1b6e3a79b
+
+Time (s): cpu = 00:04:19 ; elapsed = 00:04:03 . Memory (MB): peak = 1630.965 ; gain = 79.855
+Phase 4.1 Post Commit Optimization | Checksum: 1b6e3a79b
+
+Time (s): cpu = 00:04:19 ; elapsed = 00:04:04 . Memory (MB): peak = 1630.965 ; gain = 79.855
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1b6e3a79b
+
+Time (s): cpu = 00:04:20 ; elapsed = 00:04:04 . Memory (MB): peak = 1630.965 ; gain = 79.855
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 1b6e3a79b
+
+Time (s): cpu = 00:04:20 ; elapsed = 00:04:04 . Memory (MB): peak = 1630.965 ; gain = 79.855
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1630.965 ; gain = 0.000
+Phase 4.4 Final Placement Cleanup | Checksum: 14e3c1bcb
+
+Time (s): cpu = 00:04:20 ; elapsed = 00:04:05 . Memory (MB): peak = 1630.965 ; gain = 79.855
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 14e3c1bcb
+
+Time (s): cpu = 00:04:20 ; elapsed = 00:04:05 . Memory (MB): peak = 1630.965 ; gain = 79.855
+Ending Placer Task | Checksum: edfb459d
+
+Time (s): cpu = 00:04:20 ; elapsed = 00:04:05 . Memory (MB): peak = 1630.965 ; gain = 79.855
+INFO: [Common 17-83] Releasing license: Implementation
+67 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:04:23 ; elapsed = 00:04:07 . Memory (MB): peak = 1630.965 ; gain = 79.855
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 1630.965 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/CA_Final_Project/CA_Final_Project.runs/impl_1/FPGA_Top_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 1630.965 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_io -file FPGA_Top_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.400 . Memory (MB): peak = 1630.965 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file FPGA_Top_utilization_placed.rpt -pb FPGA_Top_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file FPGA_Top_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.089 . Memory (MB): peak = 1630.965 ; gain = 0.000
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1644.547 ; gain = 0.000
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.743 | TNS=-45085.028 |
+Phase 1 Physical Synthesis Initialization | Checksum: c4df838f
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1648.547 ; gain = 4.000
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.743 | TNS=-45085.028 |
+
+Phase 2 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 2 DSP Register Optimization | Checksum: c4df838f
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1648.547 ; gain = 4.000
+
+Phase 3 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.743 | TNS=-45085.028 |
+INFO: [Physopt 32-663] Processed net uProc/DM/DataMemory_reg_n_0_[325][3].  Re-placed instance uProc/DM/DataMemory_reg[325][3]
+INFO: [Physopt 32-735] Processed net uProc/DM/DataMemory_reg_n_0_[325][3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.731 | TNS=-45084.591 |
+INFO: [Physopt 32-663] Processed net uProc/DM/DataMemory_reg[302]_116[1].  Re-placed instance uProc/DM/DataMemory_reg[302][1]
+INFO: [Physopt 32-735] Processed net uProc/DM/DataMemory_reg[302]_116[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.731 | TNS=-45085.144 |
+INFO: [Physopt 32-663] Processed net uProc/DM/DataMemory_reg[302]_116[3].  Re-placed instance uProc/DM/DataMemory_reg[302][3]
+INFO: [Physopt 32-735] Processed net uProc/DM/DataMemory_reg[302]_116[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.731 | TNS=-45085.646 |
+INFO: [Physopt 32-663] Processed net uProc/DM/DataMemory_reg[302]_116[4].  Re-placed instance uProc/DM/DataMemory_reg[302][4]
+INFO: [Physopt 32-735] Processed net uProc/DM/DataMemory_reg[302]_116[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.731 | TNS=-45086.206 |
+INFO: [Physopt 32-663] Processed net uProc/DM/DataMemory_reg[302]_116[5].  Re-placed instance uProc/DM/DataMemory_reg[302][5]
+INFO: [Physopt 32-735] Processed net uProc/DM/DataMemory_reg[302]_116[5]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.729 | TNS=-45086.668 |
+INFO: [Physopt 32-662] Processed net uProc/DM/DataMemory_reg[381]_81[2].  Did not re-place instance uProc/DM/DataMemory_reg[381][2]
+INFO: [Physopt 32-702] Processed net uProc/DM/DataMemory_reg[381]_81[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net uProc/PC_REG/PC_Out_reg[62]_0[1]. Replicated 3 times.
+INFO: [Physopt 32-735] Processed net uProc/PC_REG/PC_Out_reg[62]_0[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.726 | TNS=-45083.656 |
+INFO: [Physopt 32-663] Processed net uProc/DM/DataMemory_reg_n_0_[297][4].  Re-placed instance uProc/DM/DataMemory_reg[297][4]
+INFO: [Physopt 32-735] Processed net uProc/DM/DataMemory_reg_n_0_[297][4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.725 | TNS=-45084.202 |
+INFO: [Physopt 32-81] Processed net uProc/PC_REG/PC_Out_reg[62]_0[5]. Replicated 3 times.
+INFO: [Physopt 32-735] Processed net uProc/PC_REG/PC_Out_reg[62]_0[5]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.722 | TNS=-45081.069 |
+INFO: [Physopt 32-702] Processed net uProc/DM/DataMemory_reg[433]_56[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net uProc/PC_REG/PC_Out_reg[62]_0[4]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net uProc/PC_REG/PC_Out_reg[62]_0[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.718 | TNS=-45047.887 |
+INFO: [Physopt 32-572] Net uProc/PC_REG/PC_Out_reg[62]_0[4] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net uProc/PC_REG/PC_Out_reg[62]_0[4].  Did not re-place instance uProc/PC_REG/PC_Out_reg[4]
+INFO: [Physopt 32-81] Processed net uProc/PC_REG/PC_Out_reg[62]_0[4]. Replicated 3 times.
+INFO: [Physopt 32-735] Processed net uProc/PC_REG/PC_Out_reg[62]_0[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.694 | TNS=-44727.516 |
+INFO: [Physopt 32-662] Processed net uProc/PC_REG/PC_Out_reg[62]_0[5].  Did not re-place instance uProc/PC_REG/PC_Out_reg[5]
+INFO: [Physopt 32-702] Processed net uProc/PC_REG/PC_Out_reg[62]_0[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net uProc/PC_REG/DataMemory[382][7]_i_3_n_0.  Re-placed instance uProc/PC_REG/DataMemory[382][7]_i_3
+INFO: [Physopt 32-735] Processed net uProc/PC_REG/DataMemory[382][7]_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.665 | TNS=-44718.563 |
+INFO: [Physopt 32-81] Processed net uProc/PC_REG/PC_Out_reg[62]_0[3]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net uProc/PC_REG/PC_Out_reg[62]_0[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.663 | TNS=-44646.302 |
+INFO: [Physopt 32-663] Processed net uProc/DM/DataMemory_reg_n_0_[271][0].  Re-placed instance uProc/DM/DataMemory_reg[271][0]
+INFO: [Physopt 32-735] Processed net uProc/DM/DataMemory_reg_n_0_[271][0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.653 | TNS=-44646.393 |
+INFO: [Physopt 32-663] Processed net uProc/DM/DataMemory_reg_n_0_[98][1].  Re-placed instance uProc/DM/DataMemory_reg[98][1]
+INFO: [Physopt 32-735] Processed net uProc/DM/DataMemory_reg_n_0_[98][1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.653 | TNS=-44646.848 |
+INFO: [Physopt 32-663] Processed net uProc/DM/DataMemory_reg_n_0_[98][2].  Re-placed instance uProc/DM/DataMemory_reg[98][2]
+INFO: [Physopt 32-735] Processed net uProc/DM/DataMemory_reg_n_0_[98][2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.653 | TNS=-44647.306 |
+INFO: [Physopt 32-663] Processed net uProc/DM/DataMemory_reg_n_0_[98][4].  Re-placed instance uProc/DM/DataMemory_reg[98][4]
+INFO: [Physopt 32-735] Processed net uProc/DM/DataMemory_reg_n_0_[98][4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.653 | TNS=-44647.790 |
+INFO: [Physopt 32-663] Processed net uProc/DM/DataMemory_reg_n_0_[98][6].  Re-placed instance uProc/DM/DataMemory_reg[98][6]
+INFO: [Physopt 32-735] Processed net uProc/DM/DataMemory_reg_n_0_[98][6]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.651 | TNS=-44648.405 |
+INFO: [Physopt 32-81] Processed net uProc/PC_REG/PC_Out_reg[62]_0[2]. Replicated 4 times.
+INFO: [Physopt 32-735] Processed net uProc/PC_REG/PC_Out_reg[62]_0[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.650 | TNS=-44628.829 |
+INFO: [Physopt 32-663] Processed net uProc/DM/DataMemory_reg_n_0_[416][4].  Re-placed instance uProc/DM/DataMemory_reg[416][4]
+INFO: [Physopt 32-735] Processed net uProc/DM/DataMemory_reg_n_0_[416][4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.649 | TNS=-44628.578 |
+INFO: [Physopt 32-662] Processed net uProc/DM/DataMemory_reg[433]_56[4].  Did not re-place instance uProc/DM/DataMemory_reg[433][4]
+INFO: [Physopt 32-702] Processed net uProc/DM/DataMemory_reg[433]_56[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net uProc/PC_REG/PC_Out__0[0]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net uProc/PC_REG/PC_Out__0[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.643 | TNS=-44613.302 |
+INFO: [Physopt 32-663] Processed net uProc/DM/DataMemory_reg_n_0_[84][1].  Re-placed instance uProc/DM/DataMemory_reg[84][1]
+INFO: [Physopt 32-735] Processed net uProc/DM/DataMemory_reg_n_0_[84][1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.642 | TNS=-44613.818 |
+INFO: [Physopt 32-663] Processed net uProc/DM/DataMemory_reg[384]_78[2].  Re-placed instance uProc/DM/DataMemory_reg[384][2]
+INFO: [Physopt 32-735] Processed net uProc/DM/DataMemory_reg[384]_78[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.642 | TNS=-44614.317 |
+INFO: [Physopt 32-663] Processed net uProc/DM/DataMemory_reg[384]_78[3].  Re-placed instance uProc/DM/DataMemory_reg[384][3]
+INFO: [Physopt 32-735] Processed net uProc/DM/DataMemory_reg[384]_78[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.642 | TNS=-44614.622 |
+INFO: [Physopt 32-663] Processed net uProc/DM/DataMemory_reg[384]_78[6].  Re-placed instance uProc/DM/DataMemory_reg[384][6]
+INFO: [Physopt 32-735] Processed net uProc/DM/DataMemory_reg[384]_78[6]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.642 | TNS=-44614.910 |
+INFO: [Physopt 32-663] Processed net uProc/DM/DataMemory_reg[384]_78[7].  Re-placed instance uProc/DM/DataMemory_reg[384][7]
+INFO: [Physopt 32-735] Processed net uProc/DM/DataMemory_reg[384]_78[7]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.641 | TNS=-44615.190 |
+INFO: [Physopt 32-663] Processed net uProc/DM/DataMemory_reg[346]_99[2].  Re-placed instance uProc/DM/DataMemory_reg[346][2]
+INFO: [Physopt 32-735] Processed net uProc/DM/DataMemory_reg[346]_99[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.639 | TNS=-44615.685 |
+INFO: [Physopt 32-663] Processed net uProc/DM/DataMemory_reg[51]_196[7].  Re-placed instance uProc/DM/DataMemory_reg[51][7]
+INFO: [Physopt 32-735] Processed net uProc/DM/DataMemory_reg[51]_196[7]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.638 | TNS=-44615.586 |
+INFO: [Physopt 32-663] Processed net uProc/DM/DataMemory_reg[283]_124[7].  Re-placed instance uProc/DM/DataMemory_reg[283][7]
+INFO: [Physopt 32-735] Processed net uProc/DM/DataMemory_reg[283]_124[7]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.638 | TNS=-44615.721 |
+INFO: [Physopt 32-702] Processed net uProc/DM/DataMemory_reg[433]_56[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net uProc/PC_REG/PC_Out_reg[62]_0[2].  Did not re-place instance uProc/PC_REG/PC_Out_reg[2]
+INFO: [Physopt 32-702] Processed net uProc/PC_REG/PC_Out_reg[62]_0[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net uProc/PC_REG/DataMemory[112][7]_i_13_2.  Re-placed instance uProc/PC_REG/DataMemory[433][7]_i_5
+INFO: [Physopt 32-735] Processed net uProc/PC_REG/DataMemory[112][7]_i_13_2. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.635 | TNS=-44612.698 |
+INFO: [Physopt 32-663] Processed net uProc/DM/DataMemory_reg_n_0_[325][4].  Re-placed instance uProc/DM/DataMemory_reg[325][4]
+INFO: [Physopt 32-735] Processed net uProc/DM/DataMemory_reg_n_0_[325][4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.634 | TNS=-44612.811 |
+INFO: [Physopt 32-663] Processed net uProc/DM/DataMemory_reg_n_0_[386][1].  Re-placed instance uProc/DM/DataMemory_reg[386][1]
+INFO: [Physopt 32-735] Processed net uProc/DM/DataMemory_reg_n_0_[386][1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.634 | TNS=-44613.531 |
+INFO: [Physopt 32-663] Processed net uProc/DM/DataMemory_reg_n_0_[386][4].  Re-placed instance uProc/DM/DataMemory_reg[386][4]
+INFO: [Physopt 32-735] Processed net uProc/DM/DataMemory_reg_n_0_[386][4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.634 | TNS=-44614.102 |
+INFO: [Physopt 32-663] Processed net uProc/DM/DataMemory_reg_n_0_[386][6].  Re-placed instance uProc/DM/DataMemory_reg[386][6]
+INFO: [Physopt 32-735] Processed net uProc/DM/DataMemory_reg_n_0_[386][6]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.631 | TNS=-44614.775 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.631 | TNS=-44614.775 |
+Phase 3 Critical Path Optimization | Checksum: c4df838f
+
+Time (s): cpu = 00:01:41 ; elapsed = 00:01:08 . Memory (MB): peak = 1648.598 ; gain = 4.051
+
+Phase 4 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.631 | TNS=-44614.775 |
+INFO: [Physopt 32-663] Processed net uProc/DM/DataMemory_reg[258]_137[2].  Re-placed instance uProc/DM/DataMemory_reg[258][2]
+INFO: [Physopt 32-735] Processed net uProc/DM/DataMemory_reg[258]_137[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.631 | TNS=-44615.419 |
+INFO: [Physopt 32-663] Processed net uProc/DM/DataMemory_reg[258]_137[3].  Re-placed instance uProc/DM/DataMemory_reg[258][3]
+INFO: [Physopt 32-735] Processed net uProc/DM/DataMemory_reg[258]_137[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.631 | TNS=-44616.070 |
+INFO: [Physopt 32-663] Processed net uProc/DM/DataMemory_reg[258]_137[4].  Re-placed instance uProc/DM/DataMemory_reg[258][4]
+INFO: [Physopt 32-735] Processed net uProc/DM/DataMemory_reg[258]_137[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.631 | TNS=-44616.776 |
+INFO: [Physopt 32-663] Processed net uProc/DM/DataMemory_reg[258]_137[6].  Re-placed instance uProc/DM/DataMemory_reg[258][6]
+INFO: [Physopt 32-735] Processed net uProc/DM/DataMemory_reg[258]_137[6]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.631 | TNS=-44617.376 |
+INFO: [Physopt 32-663] Processed net uProc/DM/DataMemory_reg[331]_103[4].  Re-placed instance uProc/DM/DataMemory_reg[331][4]
+INFO: [Physopt 32-735] Processed net uProc/DM/DataMemory_reg[331]_103[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.631 | TNS=-44616.423 |
+INFO: [Physopt 32-663] Processed net uProc/DM/DataMemory_reg[331]_103[5].  Re-placed instance uProc/DM/DataMemory_reg[331][5]
+INFO: [Physopt 32-735] Processed net uProc/DM/DataMemory_reg[331]_103[5]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.631 | TNS=-44614.801 |
+INFO: [Physopt 32-662] Processed net uProc/DM/DataMemory_reg[379]_83[2].  Did not re-place instance uProc/DM/DataMemory_reg[379][2]
+INFO: [Physopt 32-702] Processed net uProc/DM/DataMemory_reg[379]_83[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net uProc/PC_REG/PC_Out_reg[62]_0[0]. Replicated 5 times.
+INFO: [Physopt 32-735] Processed net uProc/PC_REG/PC_Out_reg[62]_0[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.630 | TNS=-44509.023 |
+INFO: [Physopt 32-663] Processed net uProc/DM/DataMemory_reg_n_0_[450][5].  Re-placed instance uProc/DM/DataMemory_reg[450][5]
+INFO: [Physopt 32-735] Processed net uProc/DM/DataMemory_reg_n_0_[450][5]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.628 | TNS=-44509.008 |
+INFO: [Physopt 32-663] Processed net uProc/DM/DataMemory_reg_n_0_[450][4].  Re-placed instance uProc/DM/DataMemory_reg[450][4]
+INFO: [Physopt 32-735] Processed net uProc/DM/DataMemory_reg_n_0_[450][4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.626 | TNS=-44508.040 |
+INFO: [Physopt 32-663] Processed net uProc/DM/DataMemory_reg_n_0_[297][7].  Re-placed instance uProc/DM/DataMemory_reg[297][7]
+INFO: [Physopt 32-735] Processed net uProc/DM/DataMemory_reg_n_0_[297][7]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.626 | TNS=-44508.608 |
+INFO: [Physopt 32-663] Processed net uProc/DM/DataMemory_reg_n_0_[224][5].  Re-placed instance uProc/DM/DataMemory_reg[224][5]
+INFO: [Physopt 32-735] Processed net uProc/DM/DataMemory_reg_n_0_[224][5]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.626 | TNS=-44509.015 |
+INFO: [Physopt 32-663] Processed net uProc/DM/DataMemory_reg_n_0_[224][6].  Re-placed instance uProc/DM/DataMemory_reg[224][6]
+INFO: [Physopt 32-735] Processed net uProc/DM/DataMemory_reg_n_0_[224][6]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.625 | TNS=-44509.419 |
+INFO: [Physopt 32-663] Processed net uProc/DM/DataMemory_reg_n_0_[450][1].  Re-placed instance uProc/DM/DataMemory_reg[450][1]
+INFO: [Physopt 32-735] Processed net uProc/DM/DataMemory_reg_n_0_[450][1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.625 | TNS=-44509.045 |
+INFO: [Physopt 32-663] Processed net uProc/DM/DataMemory_reg[511]_3[7].  Re-placed instance uProc/DM/DataMemory_reg[511][7]
+INFO: [Physopt 32-735] Processed net uProc/DM/DataMemory_reg[511]_3[7]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.623 | TNS=-44509.878 |
+INFO: [Physopt 32-663] Processed net uProc/DM/DataMemory_reg[433]_56[4].  Re-placed instance uProc/DM/DataMemory_reg[433][4]
+INFO: [Physopt 32-735] Processed net uProc/DM/DataMemory_reg[433]_56[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.622 | TNS=-44510.132 |
+INFO: [Physopt 32-662] Processed net uProc/DM/DataMemory_reg[369]_90[4].  Did not re-place instance uProc/DM/DataMemory_reg[369][4]
+INFO: [Physopt 32-702] Processed net uProc/DM/DataMemory_reg[369]_90[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net uProc/PC_REG/PC_Out_reg[62]_0[6].  Did not re-place instance uProc/PC_REG/PC_Out_reg[6]
+INFO: [Physopt 32-702] Processed net uProc/PC_REG/PC_Out_reg[62]_0[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net uProc/PC_REG/DataMemory[250][7]_i_15_0.  Did not re-place instance uProc/PC_REG/DataMemory[373][7]_i_2
+INFO: [Physopt 32-702] Processed net uProc/PC_REG/DataMemory[250][7]_i_15_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net uProc/PC_REG/DataMemory[250][7]_i_13_n_0.  Did not re-place instance uProc/PC_REG/DataMemory[250][7]_i_13
+INFO: [Physopt 32-735] Processed net uProc/PC_REG/DataMemory[250][7]_i_13_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.620 | TNS=-44458.971 |
+INFO: [Physopt 32-663] Processed net uProc/DM/DataMemory_reg_n_0_[450][6].  Re-placed instance uProc/DM/DataMemory_reg[450][6]
+INFO: [Physopt 32-735] Processed net uProc/DM/DataMemory_reg_n_0_[450][6]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.615 | TNS=-44458.156 |
+INFO: [Physopt 32-662] Processed net uProc/DM/DataMemory_reg_n_0_[450][5].  Did not re-place instance uProc/DM/DataMemory_reg[450][5]
+INFO: [Physopt 32-702] Processed net uProc/DM/DataMemory_reg_n_0_[450][5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net uProc/PC_REG/DataMemory[481][7]_i_12_0.  Did not re-place instance uProc/PC_REG/DataMemory[481][7]_i_4
+INFO: [Physopt 32-702] Processed net uProc/PC_REG/DataMemory[481][7]_i_12_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net uProc/PC_REG/DataMemory[481][7]_i_12_n_0.  Did not re-place instance uProc/PC_REG/DataMemory[481][7]_i_12
+INFO: [Physopt 32-702] Processed net uProc/PC_REG/DataMemory[481][7]_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net uProc/PC_REG/DataMemory[250][7]_i_17_n_0.  Did not re-place instance uProc/PC_REG/DataMemory[250][7]_i_17
+INFO: [Physopt 32-702] Processed net uProc/PC_REG/DataMemory[250][7]_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net uProc/PC_REG/ALU_Result[60].  Did not re-place instance uProc/PC_REG/array_reg_r1_0_31_60_63_i_6
+INFO: [Physopt 32-702] Processed net uProc/PC_REG/ALU_Result[60]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net uProc/PC_REG/array_reg_r1_0_31_60_63_i_13_n_0.  Did not re-place instance uProc/PC_REG/array_reg_r1_0_31_60_63_i_13
+INFO: [Physopt 32-702] Processed net uProc/PC_REG/array_reg_r1_0_31_60_63_i_13_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net uProc/ALU/DataMemory[298][7]_i_73_14.  Did not re-place instance uProc/ALU/array_reg_r1_0_31_60_63_i_32
+INFO: [Physopt 32-702] Processed net uProc/ALU/DataMemory[298][7]_i_73_14. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net uProc/ALU/data2[60]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net uProc/PC_REG/S[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.615 | TNS=-44418.764 |
+INFO: [Physopt 32-662] Processed net uProc/DM/DataMemory_reg[259]_136[6].  Did not re-place instance uProc/DM/DataMemory_reg[259][6]
+INFO: [Physopt 32-702] Processed net uProc/DM/DataMemory_reg[259]_136[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net uProc/PC_REG/PC_Out_reg[62]_0[2].  Did not re-place instance uProc/PC_REG/PC_Out_reg[2]
+INFO: [Physopt 32-702] Processed net uProc/PC_REG/PC_Out_reg[62]_0[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net uProc/PC_REG/DataMemory[298][7]_i_11_n_0.  Re-placed instance uProc/PC_REG/DataMemory[298][7]_i_11
+INFO: [Physopt 32-735] Processed net uProc/PC_REG/DataMemory[298][7]_i_11_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.614 | TNS=-44411.616 |
+INFO: [Physopt 32-663] Processed net uProc/DM/DataMemory_reg_n_0_[298][2].  Re-placed instance uProc/DM/DataMemory_reg[298][2]
+INFO: [Physopt 32-735] Processed net uProc/DM/DataMemory_reg_n_0_[298][2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.614 | TNS=-44412.329 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.614 | TNS=-44412.329 |
+Phase 4 Critical Path Optimization | Checksum: c4df838f
+
+Time (s): cpu = 00:01:59 ; elapsed = 00:01:21 . Memory (MB): peak = 1648.598 ; gain = 4.051
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.085 . Memory (MB): peak = 1648.598 ; gain = 0.000
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-6.614 | TNS=-44412.329 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Path  |          0.129  |        672.699  |           21  |              0  |                    53  |           0  |           2  |  00:01:16  |
+|  Total          |          0.129  |        672.699  |           21  |              0  |                    53  |           0  |           3  |  00:01:16  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1648.598 ; gain = 0.000
+Ending Physical Synthesis Task | Checksum: 17d0f6ed8
+
+Time (s): cpu = 00:01:59 ; elapsed = 00:01:21 . Memory (MB): peak = 1648.598 ; gain = 4.051
+INFO: [Common 17-83] Releasing license: Implementation
+281 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:02:13 ; elapsed = 00:01:29 . Memory (MB): peak = 1648.598 ; gain = 17.633
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 1661.379 ; gain = 12.781
+INFO: [Common 17-1381] The checkpoint 'D:/CA_Final_Project/CA_Final_Project.runs/impl_1/FPGA_Top_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 1661.379 ; gain = 12.781
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 4225c22d ConstDB: 0 ShapeSum: 46e8cce2 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 12c1e931b
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:43 . Memory (MB): peak = 1760.750 ; gain = 85.332
+Post Restoration Checksum: NetGraph: 3abfb7f3 NumContArr: f15edb28 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 12c1e931b
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:44 . Memory (MB): peak = 1760.750 ; gain = 85.332
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 12c1e931b
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:44 . Memory (MB): peak = 1766.570 ; gain = 91.152
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 12c1e931b
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:44 . Memory (MB): peak = 1766.570 ; gain = 91.152
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1bee34719
+
+Time (s): cpu = 00:01:24 ; elapsed = 00:00:58 . Memory (MB): peak = 1788.328 ; gain = 112.910
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-6.111 | TNS=-39441.595| WHS=-0.080 | THS=-0.609 |
+
+Phase 2 Router Initialization | Checksum: 1d4359e00
+
+Time (s): cpu = 00:01:32 ; elapsed = 00:01:03 . Memory (MB): peak = 1800.293 ; gain = 124.875
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.00876983 %
+  Global Horizontal Routing Utilization  = 0.010151 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 9463
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 9448
+  Number of Partially Routed Nets     = 15
+  Number of Node Overlaps             = 63
+
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 190fe83bc
+
+Time (s): cpu = 00:01:56 ; elapsed = 00:01:16 . Memory (MB): peak = 1827.691 ; gain = 152.273
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 14124
+ Number of Nodes with overlaps = 4251
+ Number of Nodes with overlaps = 1736
+ Number of Nodes with overlaps = 1013
+ Number of Nodes with overlaps = 683
+ Number of Nodes with overlaps = 402
+ Number of Nodes with overlaps = 259
+ Number of Nodes with overlaps = 143
+ Number of Nodes with overlaps = 52
+ Number of Nodes with overlaps = 44
+ Number of Nodes with overlaps = 12
+ Number of Nodes with overlaps = 12
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-8.769 | TNS=-57181.314| WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 170e00420
+
+Time (s): cpu = 00:07:24 ; elapsed = 00:04:27 . Memory (MB): peak = 1827.691 ; gain = 152.273
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 1777
+ Number of Nodes with overlaps = 1225
+ Number of Nodes with overlaps = 871
+ Number of Nodes with overlaps = 539
+ Number of Nodes with overlaps = 388
+ Number of Nodes with overlaps = 310
+ Number of Nodes with overlaps = 190
+ Number of Nodes with overlaps = 123
+ Number of Nodes with overlaps = 76
+ Number of Nodes with overlaps = 52
+ Number of Nodes with overlaps = 16
+ Number of Nodes with overlaps = 13
+ Number of Nodes with overlaps = 11
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-8.726 | TNS=-56089.317| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 1709d5524
+
+Time (s): cpu = 00:10:47 ; elapsed = 00:06:35 . Memory (MB): peak = 1834.891 ; gain = 159.473
+Phase 4 Rip-up And Reroute | Checksum: 1709d5524
+
+Time (s): cpu = 00:10:47 ; elapsed = 00:06:35 . Memory (MB): peak = 1834.891 ; gain = 159.473
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 16ebfbadf
+
+Time (s): cpu = 00:10:49 ; elapsed = 00:06:37 . Memory (MB): peak = 1834.891 ; gain = 159.473
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-8.726 | TNS=-56050.689| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 1b91f281e
+
+Time (s): cpu = 00:10:50 ; elapsed = 00:06:37 . Memory (MB): peak = 1834.891 ; gain = 159.473
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1b91f281e
+
+Time (s): cpu = 00:10:50 ; elapsed = 00:06:37 . Memory (MB): peak = 1834.891 ; gain = 159.473
+Phase 5 Delay and Skew Optimization | Checksum: 1b91f281e
+
+Time (s): cpu = 00:10:50 ; elapsed = 00:06:37 . Memory (MB): peak = 1834.891 ; gain = 159.473
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 21e203aa1
+
+Time (s): cpu = 00:10:52 ; elapsed = 00:06:39 . Memory (MB): peak = 1834.891 ; gain = 159.473
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-8.588 | TNS=-55660.865| WHS=0.175  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 21e203aa1
+
+Time (s): cpu = 00:10:52 ; elapsed = 00:06:39 . Memory (MB): peak = 1834.891 ; gain = 159.473
+Phase 6 Post Hold Fix | Checksum: 21e203aa1
+
+Time (s): cpu = 00:10:52 ; elapsed = 00:06:39 . Memory (MB): peak = 1834.891 ; gain = 159.473
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 16.1288 %
+  Global Horizontal Routing Utilization  = 16.79 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 4x4 Area, Max Cong = 87.9504%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X24Y42 -> INT_R_X27Y45
+   INT_L_X20Y38 -> INT_R_X23Y41
+South Dir 1x1 Area, Max Cong = 95.4955%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_R_X25Y59 -> INT_R_X25Y59
+   INT_R_X25Y56 -> INT_R_X25Y56
+   INT_L_X36Y56 -> INT_L_X36Y56
+   INT_L_X22Y54 -> INT_L_X22Y54
+   INT_L_X36Y54 -> INT_L_X36Y54
+East Dir 2x2 Area, Max Cong = 89.3382%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X22Y50 -> INT_R_X23Y51
+   INT_L_X24Y50 -> INT_R_X25Y51
+   INT_L_X22Y46 -> INT_R_X23Y47
+   INT_L_X26Y46 -> INT_R_X27Y47
+   INT_L_X22Y44 -> INT_R_X23Y45
+West Dir 2x2 Area, Max Cong = 94.1176%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X32Y62 -> INT_R_X33Y63
+   INT_L_X32Y58 -> INT_R_X33Y59
+   INT_L_X32Y56 -> INT_R_X33Y57
+   INT_L_X34Y54 -> INT_R_X35Y55
+   INT_L_X22Y52 -> INT_R_X23Y53
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 1
+Effective congestion level: 3 Aspect Ratio: 0.777778 Sparse Ratio: 2.1875
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 1 Aspect Ratio: 0.5 Sparse Ratio: 1.5
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 2 Aspect Ratio: 0.8 Sparse Ratio: 2.375
+Direction: West
+----------------
+Congested clusters found at Level 1
+Effective congestion level: 3 Aspect Ratio: 1 Sparse Ratio: 0.625
+
+Phase 7 Route finalize | Checksum: 19fdb5a28
+
+Time (s): cpu = 00:10:52 ; elapsed = 00:06:40 . Memory (MB): peak = 1834.891 ; gain = 159.473
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 19fdb5a28
+
+Time (s): cpu = 00:10:53 ; elapsed = 00:06:40 . Memory (MB): peak = 1834.891 ; gain = 159.473
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 16c0273c0
+
+Time (s): cpu = 00:10:55 ; elapsed = 00:06:44 . Memory (MB): peak = 1834.891 ; gain = 159.473
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-8.588 | TNS=-55660.865| WHS=0.175  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 16c0273c0
+
+Time (s): cpu = 00:10:56 ; elapsed = 00:06:44 . Memory (MB): peak = 1834.891 ; gain = 159.473
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:10:56 ; elapsed = 00:06:44 . Memory (MB): peak = 1834.891 ; gain = 159.473
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+299 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:11:02 ; elapsed = 00:06:48 . Memory (MB): peak = 1834.891 ; gain = 173.512
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 1834.891 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/CA_Final_Project/CA_Final_Project.runs/impl_1/FPGA_Top_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1834.891 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file FPGA_Top_drc_routed.rpt -pb FPGA_Top_drc_routed.pb -rpx FPGA_Top_drc_routed.rpx
+Command: report_drc -file FPGA_Top_drc_routed.rpt -pb FPGA_Top_drc_routed.pb -rpx FPGA_Top_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file D:/CA_Final_Project/CA_Final_Project.runs/impl_1/FPGA_Top_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file FPGA_Top_methodology_drc_routed.rpt -pb FPGA_Top_methodology_drc_routed.pb -rpx FPGA_Top_methodology_drc_routed.rpx
+Command: report_methodology -file FPGA_Top_methodology_drc_routed.rpt -pb FPGA_Top_methodology_drc_routed.pb -rpx FPGA_Top_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file D:/CA_Final_Project/CA_Final_Project.runs/impl_1/FPGA_Top_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1880.559 ; gain = 43.668
+INFO: [runtcl-4] Executing : report_power -file FPGA_Top_power_routed.rpt -pb FPGA_Top_power_summary_routed.pb -rpx FPGA_Top_power_routed.rpx
+Command: report_power -file FPGA_Top_power_routed.rpt -pb FPGA_Top_power_summary_routed.pb -rpx FPGA_Top_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+311 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 1889.598 ; gain = 9.039
+INFO: [runtcl-4] Executing : report_route_status -file FPGA_Top_route_status.rpt -pb FPGA_Top_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file FPGA_Top_timing_summary_routed.rpt -pb FPGA_Top_timing_summary_routed.pb -rpx FPGA_Top_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file FPGA_Top_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file FPGA_Top_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file FPGA_Top_bus_skew_routed.rpt -pb FPGA_Top_bus_skew_routed.pb -rpx FPGA_Top_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+Command: write_bitstream -force FPGA_Top.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./FPGA_Top.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+330 Infos, 101 Warnings, 1 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:37 ; elapsed = 00:00:35 . Memory (MB): peak = 2312.434 ; gain = 422.836
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 23 13:42:03 2026...

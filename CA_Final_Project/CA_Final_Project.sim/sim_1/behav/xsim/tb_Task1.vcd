@@ -1,0 +1,227 @@
+$date
+   Sun Apr 19 16:58:44 2026
+$end
+$version
+  2020.1
+$end
+$timescale
+  1ps
+$end
+$scope module tb_Task1 $end
+$var reg 1 ! clk $end
+$var reg 1 " reset $end
+$var wire 64 # PC_Out [63:0] $end
+$var wire 64 $ PC_Plus4 [63:0] $end
+$var wire 64 % BranchTarget [63:0] $end
+$var wire 64 & PC_Next [63:0] $end
+$var wire 64 ' ImmOut [63:0] $end
+$var reg 1 ( PCSrc $end
+$var reg 32 ) test_instr [31:0] $end
+$var integer 32 * i $end
+$scope module PC_inst $end
+$var wire 1 + clk $end
+$var wire 1 , reset $end
+$var wire 64 & PC_In [63:0] $end
+$var reg 64 - PC_Out [63:0] $end
+$upscope $end
+$scope module PCA $end
+$var wire 64 # PC [63:0] $end
+$var wire 64 $ PC_Plus4 [63:0] $end
+$upscope $end
+$scope module BRA $end
+$var wire 64 # PC [63:0] $end
+$var wire 64 . Imm [63:0] $end
+$var wire 64 % BranchTarget [63:0] $end
+$upscope $end
+$scope module MUX $end
+$var wire 64 $ In0 [63:0] $end
+$var wire 64 % In1 [63:0] $end
+$var wire 1 / PCSrc $end
+$var wire 64 & Out [63:0] $end
+$upscope $end
+$scope module IG $end
+$var wire 32 0 instruction [31:0] $end
+$var reg 64 1 imm_data [63:0] $end
+$var wire 2 2 code [1:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+1"
+bx #
+bx $
+bx %
+bx &
+b10000 '
+0(
+b1000000000000001010010011 )
+bx *
+0+
+1,
+bx -
+b1000 .
+0/
+b1000000000000001010010011 0
+b10000 1
+b0 2
+$end
+#5000
+1!
+b0 #
+b100 $
+b10000 %
+b100 &
+1+
+b0 -
+#6000
+0"
+b0 *
+0,
+#10000
+0!
+0+
+#15000
+1!
+b100 #
+b1000 $
+b10100 %
+b1000 &
+1+
+b100 -
+#16000
+b1 *
+#20000
+0!
+0+
+#25000
+1!
+b1000 #
+b1100 $
+b11000 %
+b1100 &
+1+
+b1000 -
+#26000
+b10 *
+#30000
+0!
+0+
+#35000
+1!
+b1100 #
+b10000 $
+b11100 %
+b10000 &
+1+
+b1100 -
+#36000
+b11 *
+#40000
+0!
+0+
+#45000
+1!
+b10000 #
+b10100 $
+b100000 %
+b10100 &
+1+
+b10000 -
+#46000
+b100 *
+#50000
+0!
+0+
+#55000
+1!
+b10100 #
+b11000 $
+b100100 %
+b11000 &
+1+
+b10100 -
+#56000
+b100100 &
+1(
+b101 *
+1/
+#60000
+0!
+0+
+#65000
+1!
+b100100 #
+b101000 $
+b110100 %
+b110100 &
+1+
+b100100 -
+#70000
+0!
+0+
+#75000
+1!
+b110100 #
+b111000 $
+b1000100 %
+b1000100 &
+1+
+b110100 -
+#76000
+b111000 &
+0(
+0/
+#80000
+0!
+0+
+#85000
+1!
+b111000 #
+b111100 $
+b1001000 %
+b111100 &
+1+
+b111000 -
+#86000
+b1000000000000001010010011 )
+#87000
+b100 '
+b1000000010001000100011 )
+b1000000010001000100011 0
+b100 1
+b1 2
+#88000
+b10001100011 )
+b10001100011 0
+b100 1
+b11 2
+#89000
+b1111111111111111111111111111111111111111111111111111111111111111 '
+b11111111111100000000001010010011 )
+b11111111111100000000001010010011 0
+b1111111111111111111111111111111111111111111111111111111111111111 1
+b0 2
+#90000
+0!
+0+
+#95000
+1!
+b111100 #
+b1000000 $
+b1001100 %
+b1000000 &
+1+
+b111100 -
+#100000
+0!
+0+
+#105000
+1!
+b1000000 #
+b1000100 $
+b1010000 %
+b1000100 &
+1+
+b1000000 -

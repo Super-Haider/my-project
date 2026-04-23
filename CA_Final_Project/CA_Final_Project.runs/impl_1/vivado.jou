@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Apr 23 13:26:37 2026
+# Process ID: 12812
+# Current directory: D:/CA_Final_Project/CA_Final_Project.runs/impl_1
+# Command line: vivado.exe -log FPGA_Top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source FPGA_Top.tcl -notrace
+# Log file: D:/CA_Final_Project/CA_Final_Project.runs/impl_1/FPGA_Top.vdi
+# Journal file: D:/CA_Final_Project/CA_Final_Project.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source FPGA_Top.tcl -notrace

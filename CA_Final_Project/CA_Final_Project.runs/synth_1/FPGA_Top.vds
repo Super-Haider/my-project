@@ -1,0 +1,393 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Apr 23 13:11:15 2026
+# Process ID: 4340
+# Current directory: D:/CA_Final_Project/CA_Final_Project.runs/synth_1
+# Command line: vivado.exe -log FPGA_Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FPGA_Top.tcl
+# Log file: D:/CA_Final_Project/CA_Final_Project.runs/synth_1/FPGA_Top.vds
+# Journal file: D:/CA_Final_Project/CA_Final_Project.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source FPGA_Top.tcl -notrace
+Command: synth_design -top FPGA_Top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 180
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1001.801 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'FPGA_Top' [D:/CA_Final_Project/CA_Final_Project.srcs/sources_1/imports/Downloads/FPGA_Top3.v:23]
+	Parameter IDLE bound to: 2'b00 
+	Parameter RUNNING bound to: 2'b01 
+	Parameter DONE bound to: 2'b10 
+	Parameter SEG_DASH bound to: 7'b1000000 
+	Parameter SEG_OFF bound to: 7'b0000000 
+	Parameter SEG_r bound to: 7'b1010000 
+	Parameter SEG_u bound to: 7'b0111110 
+	Parameter SEG_n bound to: 7'b1010100 
+INFO: [Synth 8-6157] synthesizing module 'TopLevelProcessor_obs' [D:/CA_Final_Project/CA_Final_Project.srcs/sources_1/imports/Downloads/FPGA_Top3.v:299]
+INFO: [Synth 8-6157] synthesizing module 'pcAdder' [D:/CA_Final_Project/CA_Final_Project.srcs/sources_1/new/Pcadder.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'pcAdder' (1#1) [D:/CA_Final_Project/CA_Final_Project.srcs/sources_1/new/Pcadder.v:4]
+INFO: [Synth 8-6157] synthesizing module 'branchAdder' [D:/CA_Final_Project/CA_Final_Project.srcs/sources_1/new/Branchadder.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'branchAdder' (2#1) [D:/CA_Final_Project/CA_Final_Project.srcs/sources_1/new/Branchadder.v:6]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [D:/CA_Final_Project/CA_Final_Project.srcs/sources_1/new/Mux2.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (3#1) [D:/CA_Final_Project/CA_Final_Project.srcs/sources_1/new/Mux2.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ProgramCounter' [D:/CA_Final_Project/CA_Final_Project.srcs/sources_1/new/Programcounter.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'ProgramCounter' (4#1) [D:/CA_Final_Project/CA_Final_Project.srcs/sources_1/new/Programcounter.v:4]
+INFO: [Synth 8-6157] synthesizing module 'Instruction_Memory' [C:/Users/DELL/Desktop/CA Labs/Design Sources/Instruction_Memory.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'Instruction_Memory' (5#1) [C:/Users/DELL/Desktop/CA Labs/Design Sources/Instruction_Memory.v:33]
+INFO: [Synth 8-6157] synthesizing module 'instruction_parser' [C:/Users/DELL/Desktop/CA Labs/Design Sources/instruction_parser.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'instruction_parser' (6#1) [C:/Users/DELL/Desktop/CA Labs/Design Sources/instruction_parser.v:3]
+INFO: [Synth 8-6157] synthesizing module 'immGen' [D:/CA_Final_Project/CA_Final_Project.srcs/sources_1/new/Immgen.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'immGen' (7#1) [D:/CA_Final_Project/CA_Final_Project.srcs/sources_1/new/Immgen.v:4]
+INFO: [Synth 8-6157] synthesizing module 'control_unit' [C:/Users/DELL/Desktop/CA Labs/Design Sources/control_unit.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'control_unit' (8#1) [C:/Users/DELL/Desktop/CA Labs/Design Sources/control_unit.v:4]
+INFO: [Synth 8-6157] synthesizing module 'registerFile' [C:/Users/DELL/Desktop/CA Labs/Design Sources/registerFile.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'registerFile' (9#1) [C:/Users/DELL/Desktop/CA Labs/Design Sources/registerFile.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Branch_unit' [C:/Users/DELL/Desktop/CA Labs/Design Sources/Branch_unit.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Branch_unit' (10#1) [C:/Users/DELL/Desktop/CA Labs/Design Sources/Branch_unit.v:4]
+INFO: [Synth 8-6157] synthesizing module 'mux' [C:/Users/DELL/Desktop/CA Labs/Design Sources/mux.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'mux' (11#1) [C:/Users/DELL/Desktop/CA Labs/Design Sources/mux.v:2]
+INFO: [Synth 8-6157] synthesizing module 'ALU_control' [C:/Users/DELL/Desktop/CA Labs/Design Sources/ALU_control.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_control' (12#1) [C:/Users/DELL/Desktop/CA Labs/Design Sources/ALU_control.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ALU_64_bit' [D:/CA_Final_Project/CA_Final_Project.srcs/sources_1/new/ALU_64_bit.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_64_bit' (13#1) [D:/CA_Final_Project/CA_Final_Project.srcs/sources_1/new/ALU_64_bit.v:4]
+INFO: [Synth 8-6157] synthesizing module 'Data_Memory' [C:/Users/DELL/Desktop/CA Labs/Design Sources/Data_Memory.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Data_Memory' (14#1) [C:/Users/DELL/Desktop/CA Labs/Design Sources/Data_Memory.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'TopLevelProcessor_obs' (15#1) [D:/CA_Final_Project/CA_Final_Project.srcs/sources_1/imports/Downloads/FPGA_Top3.v:299]
+INFO: [Synth 8-226] default block is never used [D:/CA_Final_Project/CA_Final_Project.srcs/sources_1/imports/Downloads/FPGA_Top3.v:152]
+INFO: [Synth 8-6155] done synthesizing module 'FPGA_Top' (16#1) [D:/CA_Final_Project/CA_Final_Project.srcs/sources_1/imports/Downloads/FPGA_Top3.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 1659.898 ; gain = 658.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 1659.898 ; gain = 658.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 1659.898 ; gain = 658.098
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.976 . Memory (MB): peak = 1659.898 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/DELL/Downloads/constraints_t3.xdc]
+WARNING: [Constraints 18-401] set_false_path: 'uProc/PC_REG' is not a valid endpoint. [C:/Users/DELL/Downloads/constraints_t3.xdc:55]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+Finished Parsing XDC File [C:/Users/DELL/Downloads/constraints_t3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/DELL/Downloads/constraints_t3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FPGA_Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FPGA_Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1659.898 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.138 . Memory (MB): peak = 1659.898 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:46 ; elapsed = 00:00:56 . Memory (MB): peak = 1659.898 ; gain = 658.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:46 ; elapsed = 00:00:56 . Memory (MB): peak = 1659.898 ; gain = 658.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:00:56 . Memory (MB): peak = 1659.898 ; gain = 658.098
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'FPGA_Top'
+WARNING: [Synth 8-327] inferring latch for variable 'ReadData_reg' [C:/Users/DELL/Desktop/CA Labs/Design Sources/Data_Memory.v:43]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              001 |                               00
+                 RUNNING |                              010 |                               01
+                    DONE |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'FPGA_Top'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:05:47 ; elapsed = 00:06:03 . Memory (MB): peak = 1659.898 ; gain = 658.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   64 Bit       Adders := 2     
+	   3 Input   64 Bit       Adders := 1     
+	   2 Input   27 Bit       Adders := 1     
+	   2 Input   20 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 33    
+	   2 Input    3 Bit       Adders := 2     
++---XORs : 
+	   2 Input     64 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               27 Bit    Registers := 1     
+	               20 Bit    Registers := 1     
+	                8 Bit    Registers := 512   
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---RAMs : 
+	               2K Bit	(32 X 64 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   64 Bit        Muxes := 5     
+	   4 Input   64 Bit        Muxes := 1     
+	  10 Input   64 Bit        Muxes := 1     
+	   2 Input   27 Bit        Muxes := 1     
+	   2 Input   20 Bit        Muxes := 2     
+	   2 Input   15 Bit        Muxes := 2     
+	   4 Input    8 Bit        Muxes := 288   
+	   2 Input    8 Bit        Muxes := 510   
+	   4 Input    7 Bit        Muxes := 1     
+	   8 Input    7 Bit        Muxes := 1     
+	  12 Input    7 Bit        Muxes := 1     
+	  14 Input    7 Bit        Muxes := 1     
+	   3 Input    7 Bit        Muxes := 1     
+	   7 Input    4 Bit        Muxes := 1     
+	  12 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 24    
+	   2 Input    3 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 33    
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 514   
+	   5 Input    1 Bit        Muxes := 380   
+	   4 Input    1 Bit        Muxes := 130   
+	   3 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'ReadData_reg[32]' (LDC) to 'ReadData_reg[33]'
+INFO: [Synth 8-3886] merging instance 'ReadData_reg[33]' (LDC) to 'ReadData_reg[34]'
+INFO: [Synth 8-3886] merging instance 'ReadData_reg[34]' (LDC) to 'ReadData_reg[35]'
+INFO: [Synth 8-3886] merging instance 'ReadData_reg[35]' (LDC) to 'ReadData_reg[36]'
+INFO: [Synth 8-3886] merging instance 'ReadData_reg[36]' (LDC) to 'ReadData_reg[37]'
+INFO: [Synth 8-3886] merging instance 'ReadData_reg[37]' (LDC) to 'ReadData_reg[38]'
+INFO: [Synth 8-3886] merging instance 'ReadData_reg[38]' (LDC) to 'ReadData_reg[39]'
+INFO: [Synth 8-3886] merging instance 'ReadData_reg[39]' (LDC) to 'ReadData_reg[40]'
+INFO: [Synth 8-3886] merging instance 'ReadData_reg[40]' (LDC) to 'ReadData_reg[41]'
+INFO: [Synth 8-3886] merging instance 'ReadData_reg[41]' (LDC) to 'ReadData_reg[42]'
+INFO: [Synth 8-3886] merging instance 'ReadData_reg[42]' (LDC) to 'ReadData_reg[43]'
+INFO: [Synth 8-3886] merging instance 'ReadData_reg[43]' (LDC) to 'ReadData_reg[44]'
+INFO: [Synth 8-3886] merging instance 'ReadData_reg[44]' (LDC) to 'ReadData_reg[45]'
+INFO: [Synth 8-3886] merging instance 'ReadData_reg[45]' (LDC) to 'ReadData_reg[46]'
+INFO: [Synth 8-3886] merging instance 'ReadData_reg[46]' (LDC) to 'ReadData_reg[47]'
+INFO: [Synth 8-3886] merging instance 'ReadData_reg[47]' (LDC) to 'ReadData_reg[48]'
+INFO: [Synth 8-3886] merging instance 'ReadData_reg[48]' (LDC) to 'ReadData_reg[49]'
+INFO: [Synth 8-3886] merging instance 'ReadData_reg[49]' (LDC) to 'ReadData_reg[50]'
+INFO: [Synth 8-3886] merging instance 'ReadData_reg[50]' (LDC) to 'ReadData_reg[51]'
+INFO: [Synth 8-3886] merging instance 'ReadData_reg[51]' (LDC) to 'ReadData_reg[52]'
+INFO: [Synth 8-3886] merging instance 'ReadData_reg[52]' (LDC) to 'ReadData_reg[53]'
+INFO: [Synth 8-3886] merging instance 'ReadData_reg[53]' (LDC) to 'ReadData_reg[54]'
+INFO: [Synth 8-3886] merging instance 'ReadData_reg[54]' (LDC) to 'ReadData_reg[55]'
+INFO: [Synth 8-3886] merging instance 'ReadData_reg[55]' (LDC) to 'ReadData_reg[56]'
+INFO: [Synth 8-3886] merging instance 'ReadData_reg[56]' (LDC) to 'ReadData_reg[57]'
+INFO: [Synth 8-3886] merging instance 'ReadData_reg[57]' (LDC) to 'ReadData_reg[58]'
+INFO: [Synth 8-3886] merging instance 'ReadData_reg[58]' (LDC) to 'ReadData_reg[59]'
+INFO: [Synth 8-3886] merging instance 'ReadData_reg[59]' (LDC) to 'ReadData_reg[60]'
+INFO: [Synth 8-3886] merging instance 'ReadData_reg[60]' (LDC) to 'ReadData_reg[61]'
+INFO: [Synth 8-3886] merging instance 'ReadData_reg[61]' (LDC) to 'ReadData_reg[62]'
+INFO: [Synth 8-3886] merging instance 'ReadData_reg[62]' (LDC) to 'ReadData_reg[63]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ReadData_reg[63] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:06:25 ; elapsed = 00:07:20 . Memory (MB): peak = 1659.898 ; gain = 658.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++-------------------+-----------------------+---------------+----------------+
+|Module Name        | RTL Object            | Depth x Width | Implemented As | 
++-------------------+-----------------------+---------------+----------------+
+|Instruction_Memory | p_0_out               | 128x8         | LUT            | 
+|Instruction_Memory | p_0_out               | 128x8         | LUT            | 
+|Instruction_Memory | p_0_out               | 128x8         | LUT            | 
+|Instruction_Memory | p_0_out               | 128x8         | LUT            | 
+|FPGA_Top           | PC_REG/PC_Out_reg_rep | 128x8         | Block RAM      | 
+|FPGA_Top           | p_0_out               | 128x8         | LUT            | 
+|FPGA_Top           | p_0_out               | 128x8         | LUT            | 
+|FPGA_Top           | p_0_out               | 128x8         | LUT            | 
++-------------------+-----------------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------+--------------+-----------+----------------------+--------------+
+|Module Name | RTL Object   | Inference | Size (Depth x Width) | Primitives   | 
++------------+--------------+-----------+----------------------+--------------+
+|FPGA_Top    | RF/array_reg | Implied   | 32 x 64              | RAM32M x 22	 | 
++------------+--------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:06:43 ; elapsed = 00:07:39 . Memory (MB): peak = 1659.898 ; gain = 658.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+info: optimization accepted worst group hill climbing move (-3558.0/oG. 160.0ps)
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:11:27 ; elapsed = 00:12:34 . Memory (MB): peak = 1917.516 ; gain = 915.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++------------+--------------+-----------+----------------------+--------------+
+|Module Name | RTL Object   | Inference | Size (Depth x Width) | Primitives   | 
++------------+--------------+-----------+----------------------+--------------+
+|FPGA_Top    | RF/array_reg | Implied   | 32 x 64              | RAM32M x 22	 | 
++------------+--------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-139] cannot merge instances i_1/\uProc/PC_REG/PC_Out_reg[0]  and i_1/\uProc/PC_REG/PC_Out_reg_rep[0]  because of non-equivalent assertions
+INFO: [Synth 8-139] cannot merge instances i_1/\uProc/PC_REG/PC_Out_reg[0]  and i_1/\uProc/PC_REG/PC_Out_reg_rep[0]  because of non-equivalent assertions
+INFO: [Synth 8-139] cannot merge instances i_1/\uProc/PC_REG/PC_Out_reg[0]  and i_1/\uProc/PC_REG/PC_Out_reg_rep[0]  because of non-equivalent assertions
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:11:31 ; elapsed = 00:13:21 . Memory (MB): peak = 1917.516 ; gain = 915.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:11:45 ; elapsed = 00:13:36 . Memory (MB): peak = 1917.516 ; gain = 915.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:11:45 ; elapsed = 00:13:36 . Memory (MB): peak = 1917.516 ; gain = 915.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:11:49 ; elapsed = 00:13:40 . Memory (MB): peak = 1917.516 ; gain = 915.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:11:49 ; elapsed = 00:13:40 . Memory (MB): peak = 1917.516 ; gain = 915.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:11:50 ; elapsed = 00:13:42 . Memory (MB): peak = 1917.516 ; gain = 915.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:11:51 ; elapsed = 00:13:42 . Memory (MB): peak = 1917.516 ; gain = 915.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     3|
+|2     |CARRY4 |    95|
+|3     |LUT1   |     4|
+|4     |LUT2   |   533|
+|5     |LUT3   |  1008|
+|6     |LUT4   |   740|
+|7     |LUT5   |   888|
+|8     |LUT6   |  7715|
+|9     |MUXF7  |  2196|
+|10    |MUXF8  |  1024|
+|11    |RAM32M |    22|
+|12    |FDCE   |    73|
+|13    |FDPE   |     1|
+|14    |FDRE   |  4167|
+|15    |LD     |    32|
+|16    |IBUF   |     3|
+|17    |OBUF   |    28|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:11:51 ; elapsed = 00:13:42 . Memory (MB): peak = 1917.516 ; gain = 915.715
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:11:13 ; elapsed = 00:13:51 . Memory (MB): peak = 1917.516 ; gain = 915.715
+Synthesis Optimization Complete : Time (s): cpu = 00:11:51 ; elapsed = 00:14:03 . Memory (MB): peak = 1917.516 ; gain = 915.715
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.445 . Memory (MB): peak = 1917.516 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3369 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1917.516 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 54 instances were transformed.
+  LD => LDCE: 32 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 22 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+85 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:12:06 ; elapsed = 00:14:30 . Memory (MB): peak = 1917.516 ; gain = 915.715
+INFO: [Common 17-1381] The checkpoint 'D:/CA_Final_Project/CA_Final_Project.runs/synth_1/FPGA_Top.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1917.516 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file FPGA_Top_utilization_synth.rpt -pb FPGA_Top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 23 13:26:22 2026...

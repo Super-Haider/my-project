@@ -1,0 +1,594 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Thu Apr 23 13:32:21 2026
+| Host         : DESKTOP-8N28EF7 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file FPGA_Top_control_sets_placed.rpt
+| Design       : FPGA_Top
+| Device       : xc7a35t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   516 |
+|    Minimum number of control sets                        |   516 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |     7 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   516 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |   512 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     4 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              32 |           14 |
+| No           | No                    | Yes                    |              74 |           20 |
+| No           | Yes                   | No                     |              71 |           25 |
+| Yes          | No                    | No                     |            4096 |         1974 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------+-----------------------------------------------+------------------+------------------+----------------+--------------+
+|      Clock Signal     |                 Enable Signal                 | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------------+-----------------------------------------------+------------------+------------------+----------------+--------------+
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[238][7]_i_5_1[0]      |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/array_reg_r1_0_31_6_11_i_7_5[0]  |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/array_reg_r1_0_31_6_11_i_8_4[0]  |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[458][7]_i_3_2[0]      |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[478][7]_i_6_5[0]      |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[478][7]_i_3_3[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[478][7]_i_3_0[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[458][7]_i_3_0[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[458][7]_i_3_1[0]      |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[478][7]_i_6_1[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[478][7]_i_6_4[0]      |                  |                6 |              8 |         1.33 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[478][7]_i_3_5[0]      |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[479][7]_i_3_0[0]      |                  |                8 |              8 |         1.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[479][7]_i_3_1[0]      |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[478][7]_i_6_6[0]      |                  |                1 |              8 |         8.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[478][7]_i_3_4[0]      |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[478][7]_i_6_7[0]      |                  |                6 |              8 |         1.33 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[478][7]_i_3_2[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[478][7]_i_3_1[0]      |                  |                8 |              8 |         1.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[478][7]_i_6_3[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[478][7]_i_3_6[0]      |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[478][7]_i_6_2[0]      |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[478][7]_i_6_0[0]      |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[479][7]_i_3_2[0]      |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/array_reg_r1_0_31_6_11_i_10_0[0] |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[112][7]_i_5_3[0]      |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[154][7]_i_3_0[0]      |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[112][7]_i_5_0[0]      |                  |                7 |              8 |         1.14 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[112][7]_i_4_0[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[112][7]_i_5_1[0]      |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[112][7]_i_5_2[0]      |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[160][7]_i_5_0[0]      |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[177][7]_i_5_0[0]      |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[160][7]_i_4_0[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[182][7]_i_3_1[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[182][7]_i_3_0[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[185][7]_i_4_0[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[192][7]_i_3_0[0]      |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[160][7]_i_5_2[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[1][7]_i_4_0[0]        |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[1][7]_i_4_1[0]        |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[160][7]_i_4_1[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[160][7]_i_5_1[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[245][7]_i_5_4[0]      |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[245][7]_i_5_7[0]      |                  |                6 |              8 |         1.33 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[249][7]_i_4_0[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[249][7]_i_4_1[0]      |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[250][7]_i_8_3[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[245][7]_i_5_0[0]      |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[235][7]_i_8_0[0]      |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[249][7]_i_3_1[0]      |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[252][7]_i_3_0[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[245][7]_i_5_8[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[245][7]_i_5_3[0]      |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[250][7]_i_8_2[0]      |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[250][7]_i_8_0[0]      |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[245][7]_i_5_2[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[250][7]_i_8_1[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[252][7]_i_3_2[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[245][7]_i_5_1[0]      |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[257][7]_i_3_0[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[250][7]_i_6_0[0]      |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[245][7]_i_5_6[0]      |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[252][7]_i_3_1[0]      |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[454][7]_i_6_0[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[249][7]_i_3_0[0]      |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[238][7]_i_5_0[0]      |                  |                1 |              8 |         8.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[245][7]_i_5_9[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[245][7]_i_5_5[0]      |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[274][7]_i_4_0[0]      |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[305][7]_i_4_0[0]      |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[274][7]_i_4_1[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[305][7]_i_4_1[0]      |                  |                8 |              8 |         1.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[305][7]_i_4_2[0]      |                  |                8 |              8 |         1.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[316][7]_i_3_0[0]      |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[328][7]_i_5_2[0]      |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[340][7]_i_4_3[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[340][7]_i_5_0[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[340][7]_i_4_2[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[340][7]_i_5_1[0]      |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[328][7]_i_5_0[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[328][7]_i_5_1[0]      |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[313][7]_i_4_0[0]      |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[274][7]_i_4_2[0]      |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[332][7]_i_3_0[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[305][7]_i_4_3[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[340][7]_i_4_0[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[340][7]_i_4_1[0]      |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[307][7]_i_3_0[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[266][7]_i_3_0[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[406][7]_i_3_3[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[373][7]_i_2_4[0]      |                  |                7 |              8 |         1.14 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[406][7]_i_3_4[0]      |                  |                6 |              8 |         1.33 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[406][7]_i_3_5[0]      |                  |                7 |              8 |         1.14 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[406][7]_i_3_6[0]      |                  |                6 |              8 |         1.33 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[406][7]_i_3_7[0]      |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[352][7]_i_2_2[0]      |                  |                6 |              8 |         1.33 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[373][7]_i_2_7[0]      |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[373][7]_i_2_9[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[373][7]_i_2_11[0]     |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[373][7]_i_2_3[0]      |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[373][7]_i_2_8[0]      |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[352][7]_i_2_3[0]      |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[385][7]_i_3_0[0]      |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[384][7]_i_3_0[0]      |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[373][7]_i_2_5[0]      |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[373][7]_i_2_6[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[384][7]_i_3_1[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[352][7]_i_2_1[0]      |                  |                8 |              8 |         1.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[352][7]_i_2_0[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[373][7]_i_2_2[0]      |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[373][7]_i_2_1[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[373][7]_i_2_12[0]     |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[373][7]_i_2_10[0]     |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[373][7]_i_2_0[0]      |                  |                6 |              8 |         1.33 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[406][7]_i_3_0[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[406][7]_i_3_1[0]      |                  |                6 |              8 |         1.33 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[406][7]_i_3_2[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[417][7]_i_2_0[0]      |                  |                6 |              8 |         1.33 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[417][7]_i_2_2[0]      |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[417][7]_i_2_3[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[406][7]_i_3_8[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[406][7]_i_3_9[0]      |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[445][7]_i_2_0[0]      |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[417][7]_i_2_4[0]      |                  |                1 |              8 |         8.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[417][7]_i_2_1[0]      |                  |                8 |              8 |         1.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[453][7]_i_2_0[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[453][7]_i_2_1[0]      |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/array_reg_r1_0_31_6_11_i_10_1[0] |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[481][7]_i_4_4[0]      |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[481][7]_i_4_2[0]      |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[494][7]_i_3_4[0]      |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[481][7]_i_4_0[0]      |                  |                6 |              8 |         1.33 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[481][7]_i_4_3[0]      |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[498][7]_i_4_0[0]      |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[494][7]_i_3_7[0]      |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[494][7]_i_3_5[0]      |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[494][7]_i_3_6[0]      |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[481][7]_i_4_1[0]      |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[506][7]_i_4_0[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[508][7]_i_3_0[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[510][7]_i_5_4[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[510][7]_i_6_2[0]      |                  |                7 |              8 |         1.14 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[510][7]_i_5_5[0]      |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[509][7]_i_5_0[0]      |                  |                8 |              8 |         1.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[510][7]_i_4_3[0]      |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[510][7]_i_5_0[0]      |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[510][7]_i_6_12[0]     |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[510][7]_i_6_7[0]      |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[510][7]_i_5_11[0]     |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[510][7]_i_6_0[0]      |                  |                8 |              8 |         1.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[509][7]_i_3_0[0]      |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[509][7]_i_5_1[0]      |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[510][7]_i_5_9[0]      |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[510][7]_i_6_11[0]     |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[510][7]_i_6_15[0]     |                  |                1 |              8 |         8.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[510][7]_i_6_17[0]     |                  |                1 |              8 |         8.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[510][7]_i_5_2[0]      |                  |                7 |              8 |         1.14 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[510][7]_i_5_6[0]      |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[510][7]_i_5_7[0]      |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[510][7]_i_6_16[0]     |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[510][7]_i_6_1[0]      |                  |                7 |              8 |         1.14 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[510][7]_i_6_18[0]     |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[510][7]_i_6_9[0]      |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[510][7]_i_6_14[0]     |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[510][7]_i_5_12[0]     |                  |                1 |              8 |         8.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[510][7]_i_6_3[0]      |                  |                6 |              8 |         1.33 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[510][7]_i_6_4[0]      |                  |                6 |              8 |         1.33 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[510][7]_i_5_8[0]      |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[510][7]_i_5_10[0]     |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[510][7]_i_6_19[0]     |                  |                1 |              8 |         8.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[510][7]_i_6_10[0]     |                  |                6 |              8 |         1.33 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[510][7]_i_6_5[0]      |                  |                8 |              8 |         1.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[510][7]_i_6_13[0]     |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[510][7]_i_5_3[0]      |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[510][7]_i_5_1[0]      |                  |                8 |              8 |         1.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[510][7]_i_6_6[0]      |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[510][7]_i_6_8[0]      |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[8][7]_i_5_1[0]        |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[8][7]_i_5_0[0]        |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[86][7]_i_3_0[0]       |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[8][7]_i_5_2[0]        |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/DataMemory[86][7]_i_3_1[0]       |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/E[0]                             |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_1[0]           |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_10[0]          |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_101[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_107[0]         |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_108[0]         |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_106[0]         |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_109[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_11[0]          |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_111[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_112[0]         |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_113[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_102[0]         |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_114[0]         |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_0[0]           |                  |                8 |              8 |         1.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_105[0]         |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_103[0]         |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_116[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_110[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_118[0]         |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_100[0]         |                  |                7 |              8 |         1.14 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_104[0]         |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_117[0]         |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_119[0]         |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_12[0]          |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_115[0]         |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_160[0]         |                  |                6 |              8 |         1.33 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_145[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_161[0]         |                  |                8 |              8 |         1.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_173[0]         |                  |                7 |              8 |         1.14 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_175[0]         |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_176[0]         |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_14[0]          |                  |                7 |              8 |         1.14 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_177[0]         |                  |                6 |              8 |         1.33 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_139[0]         |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_178[0]         |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_155[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_170[0]         |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_157[0]         |                  |                8 |              8 |         1.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_125[0]         |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_13[0]          |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_131[0]         |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_121[0]         |                  |                7 |              8 |         1.14 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_123[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_149[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_134[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_159[0]         |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_165[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_150[0]         |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_162[0]         |                  |                7 |              8 |         1.14 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_130[0]         |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_122[0]         |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_120[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_141[0]         |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_142[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_146[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_132[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_140[0]         |                  |                7 |              8 |         1.14 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_129[0]         |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_153[0]         |                  |                7 |              8 |         1.14 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_163[0]         |                  |                6 |              8 |         1.33 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_135[0]         |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_136[0]         |                  |                8 |              8 |         1.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_158[0]         |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_166[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_167[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_147[0]         |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_15[0]          |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_144[0]         |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_164[0]         |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_126[0]         |                  |                6 |              8 |         1.33 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_133[0]         |                  |                6 |              8 |         1.33 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_156[0]         |                  |                8 |              8 |         1.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_152[0]         |                  |                6 |              8 |         1.33 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_124[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_137[0]         |                  |                1 |              8 |         8.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_154[0]         |                  |                6 |              8 |         1.33 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_168[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_169[0]         |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_16[0]          |                  |                8 |              8 |         1.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_151[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_138[0]         |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_17[0]          |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_171[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_143[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_172[0]         |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_174[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_127[0]         |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_128[0]         |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_148[0]         |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_205[0]         |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_217[0]         |                  |                8 |              8 |         1.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_206[0]         |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_228[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_186[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_187[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_220[0]         |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_225[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_2[0]           |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_218[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_215[0]         |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_203[0]         |                  |                1 |              8 |         8.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_210[0]         |                  |                6 |              8 |         1.33 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_179[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_190[0]         |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_192[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_21[0]          |                  |                7 |              8 |         1.14 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_213[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_216[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_195[0]         |                  |                8 |              8 |         1.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_224[0]         |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_230[0]         |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_183[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_207[0]         |                  |                8 |              8 |         1.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_191[0]         |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_180[0]         |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_208[0]         |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_211[0]         |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_221[0]         |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_222[0]         |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_193[0]         |                  |                8 |              8 |         1.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_18[0]          |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_19[0]          |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_182[0]         |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_200[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_196[0]         |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_185[0]         |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_197[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_201[0]         |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_214[0]         |                  |                8 |              8 |         1.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_223[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_209[0]         |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_184[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_22[0]          |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_226[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_194[0]         |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_227[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_23[0]          |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_212[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_198[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_219[0]         |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_231[0]         |                  |                6 |              8 |         1.33 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_181[0]         |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_204[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_232[0]         |                  |                6 |              8 |         1.33 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_199[0]         |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_234[0]         |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_235[0]         |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_229[0]         |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_188[0]         |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_202[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_189[0]         |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_20[0]          |                  |                7 |              8 |         1.14 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_233[0]         |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_252[0]         |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_254[0]         |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_262[0]         |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_256[0]         |                  |                6 |              8 |         1.33 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_27[0]          |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_257[0]         |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_275[0]         |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_28[0]          |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_281[0]         |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_282[0]         |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_283[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_244[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_248[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_249[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_261[0]         |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_270[0]         |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_274[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_26[0]          |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_278[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_266[0]         |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_279[0]         |                  |                7 |              8 |         1.14 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_246[0]         |                  |                7 |              8 |         1.14 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_236[0]         |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_24[0]          |                  |                6 |              8 |         1.33 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_247[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_269[0]         |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_276[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_250[0]         |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_277[0]         |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_280[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_284[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_242[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_258[0]         |                  |                6 |              8 |         1.33 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_239[0]         |                  |                6 |              8 |         1.33 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_272[0]         |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_285[0]         |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_241[0]         |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_259[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_286[0]         |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_288[0]         |                  |                7 |              8 |         1.14 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_289[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_287[0]         |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_240[0]         |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_29[0]          |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_290[0]         |                  |                8 |              8 |         1.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_291[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_271[0]         |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_292[0]         |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_243[0]         |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_273[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_268[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_293[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_238[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_253[0]         |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_237[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_255[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_264[0]         |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_245[0]         |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_251[0]         |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_263[0]         |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_265[0]         |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_267[0]         |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_260[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_25[0]          |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_316[0]         |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_56[0]          |                  |                8 |              8 |         1.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_297[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_59[0]          |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_320[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_321[0]         |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_61[0]          |                  |                8 |              8 |         1.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_62[0]          |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_43[0]          |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_55[0]          |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_310[0]         |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_6[0]           |                  |                7 |              8 |         1.14 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_296[0]         |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_313[0]         |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_318[0]         |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_5[0]           |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_304[0]         |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_294[0]         |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_311[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_30[0]          |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_35[0]          |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_60[0]          |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_302[0]         |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_306[0]         |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_319[0]         |                  |                6 |              8 |         1.33 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_63[0]          |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_33[0]          |                  |                6 |              8 |         1.33 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_34[0]          |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_51[0]          |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_309[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_65[0]          |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_4[0]           |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_317[0]         |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_36[0]          |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_39[0]          |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_57[0]          |                  |                8 |              8 |         1.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_37[0]          |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_66[0]          |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_58[0]          |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_67[0]          |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_305[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_38[0]          |                  |                6 |              8 |         1.33 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_69[0]          |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_41[0]          |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_314[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_7[0]           |                  |                8 |              8 |         1.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_64[0]          |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_308[0]         |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_32[0]          |                  |                6 |              8 |         1.33 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_42[0]          |                  |                6 |              8 |         1.33 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_301[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_31[0]          |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_40[0]          |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_68[0]          |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_307[0]         |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_299[0]         |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_300[0]         |                  |                7 |              8 |         1.14 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_3[0]           |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_298[0]         |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_312[0]         |                  |                8 |              8 |         1.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_52[0]          |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_315[0]         |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_295[0]         |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_303[0]         |                  |                7 |              8 |         1.14 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_73[0]          |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_90[0]          |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_84[0]          |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_78[0]          |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_91[0]          |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_97[0]          |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_75[0]          |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_98[0]          |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_9[0]           |                  |                7 |              8 |         1.14 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_70[0]          |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_71[0]          |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_72[0]          |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_8[0]           |                  |                7 |              8 |         1.14 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_85[0]          |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_89[0]          |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_96[0]          |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_80[0]          |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_88[0]          |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_86[0]          |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_77[0]          |                  |                7 |              8 |         1.14 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_95[0]          |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_93[0]          |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_94[0]          |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_74[0]          |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_83[0]          |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_87[0]          |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_99[0]          |                  |                6 |              8 |         1.33 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_79[0]          |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_92[0]          |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_81[0]          |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_76[0]          |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/PC_Out_reg_rep[6]_82[0]          |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/array_reg_r1_0_31_0_5_i_20_4[0]  |                  |                1 |              8 |         8.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/array_reg_r1_0_31_0_5_i_20_5[0]  |                  |                6 |              8 |         1.33 |
+|  proc_clk_BUFG        | uProc/PC_REG/array_reg_r1_0_31_0_5_i_20_8[0]  |                  |                7 |              8 |         1.14 |
+|  proc_clk_BUFG        | uProc/PC_REG/array_reg_r1_0_31_0_5_i_20_7[0]  |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/array_reg_r1_0_31_0_5_i_20_9[0]  |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/array_reg_r1_0_31_0_5_i_21_4[0]  |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/array_reg_r1_0_31_0_5_i_21_7[0]  |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/array_reg_r1_0_31_6_11_i_7_2[0]  |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/array_reg_r1_0_31_6_11_i_7_8[0]  |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/array_reg_r1_0_31_6_11_i_8_3[0]  |                  |                1 |              8 |         8.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/array_reg_r1_0_31_6_11_i_8_1[0]  |                  |                3 |              8 |         2.67 |
+|  proc_clk_BUFG        | uProc/PC_REG/array_reg_r1_0_31_6_11_i_7_4[0]  |                  |                5 |              8 |         1.60 |
+|  proc_clk_BUFG        | uProc/PC_REG/array_reg_r1_0_31_6_11_i_7_7[0]  |                  |                2 |              8 |         4.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/array_reg_r1_0_31_6_11_i_7_3[0]  |                  |                4 |              8 |         2.00 |
+|  proc_clk_BUFG        | uProc/PC_REG/array_reg_r1_0_31_6_11_i_7_6[0]  |                  |                2 |              8 |         4.00 |
+|  MemRead              |                                               |                  |               14 |             32 |         2.29 |
+|  proc_clk_BUFG        |                                               | btnC_IBUF        |               25 |             71 |         2.84 |
+|  clk_100MHz_IBUF_BUFG |                                               | btnC_IBUF        |               20 |             74 |         3.70 |
+|  proc_clk_BUFG        | uProc/PC_REG/p_0_in                           |                  |               22 |            176 |         8.00 |
++-----------------------+-----------------------------------------------+------------------+------------------+----------------+--------------+
+
+
